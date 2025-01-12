@@ -96,10 +96,33 @@ h1 {
     border-radius: 10px;
     border: 2px solid yellow;
     transition: transform 0.3s ease;
+    cursor: pointer; /* Habilita o clique */
 }
 
 .profile-image:hover {
     transform: scale(1.1);
+    border: 2px solid yellow; /* Borda amarela ao passar o mouse */
+}
+
+/* Para as imagens ampliadas */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Escurece o fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.enlarged-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border: 5px solid yellow; /* Borda amarela na imagem ampliada */
 }
 
 select,
