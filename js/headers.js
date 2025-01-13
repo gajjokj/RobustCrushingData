@@ -27,7 +27,7 @@ function loadHeader(headerNumber) {
   profileBlack.alt = `Perfil ${headerNumber} Preto`;
   profileBlack.classList.add('profile-image');
 
-  // Função para exibir a imagem em tela cheia com borda amarela
+  // Função para exibir a imagem em tela cheia
   function showFullScreenImage(imageSrc) {
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');
@@ -36,9 +36,6 @@ function loadHeader(headerNumber) {
     enlargedImage.src = imageSrc;
     enlargedImage.alt = 'Imagem Ampliada';
     enlargedImage.classList.add('enlarged-image');
-
-    // Adiciona a borda amarela na imagem ampliada
-    enlargedImage.style.border = '5px solid yellow';
 
     // Fecha a imagem ao clicar na overlay
     overlay.addEventListener('click', function () {

@@ -1,151 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;600;700&display=swap');
+
 :root {
-  --banana: #FFE81F;
-  --aqua: rgb(0, 255, 255);
-  --margin1: 1rem;
-  --margin2: 2rem;
-  --margin3: 3rem;
-  --margin5: 5rem;
+    --banana: #FFE81F;
+    --aqua: rgb(0, 255, 255);
+    --margin1: 1rem;
+    --margin2: 2rem;
+    --margin3: 3rem;
+    --margin5: 5rem;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  position: relative;
-  background-image: url('../assets/imagens/backgrund.jpg');
-  overflow-x: hidden;
+    position: relative;
+    background-image: url('../assets/imagens/backgrund.jpg');
+    overflow-x: hidden;
+    font-size: 18px;
 }
 
 .container {
-  margin: 0 10%;
+    margin: 0 10%;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
-  pointer-events: none;
-  user-select: none;
-  width: 200px;
-  margin-top: var(--margin1);
-  font-size: 14px;
-  animation-name: title;
-  animation-duration: 3s;
+    pointer-events: none;
+    user-select: none;
+    width: 200px;
+    margin-top: var(--margin1);
+    font-size: 14px;
+    animation-name: title;
+    animation-duration: 3s;
 }
 
 @keyframes title {
-  from {
-    margin-left: 100rem;
-  }
-
-  to {
-    margin-left: 0;
-  }
+    from {
+        margin-left: 100rem;
+    }
+    to {
+        margin-left: 0;
+    }
 }
 
 .border-star-wars {
-  pointer-events: none;
-  user-select: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: var(--margin3) var(--margin1) 0 var(--margin1);
-  border: 6px solid var(--banana);
-  border-radius: 20px;
-  background-color: black;
-  min-width: 300px;
-  max-height: 150px;
-  max-width: 350px;
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: var(--margin3) var(--margin1) 0 var(--margin1);
+    border: 6px solid var(--banana);
+    border-radius: 20px;
+    background-color: black;
+    min-width: 300px;
+    max-height: 150px;
+    max-width: 350px;
 }
 
 #img-star-wars {
-  display: flex;
-  width: 70%;
-  height: 140%;
-  animation-name: img-star-wars;
-  animation-duration: 3s;
+    display: flex;
+    width: 70%;
+    height: 140%;
+    animation-name: img-star-wars;
+    animation-duration: 3s;
 }
 
 main {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .img-robo {
-  position: absolute;
-  pointer-events: none;
-  user-select: none;
-  bottom: 12rem;
-  top: -1rem;
-  right: -5rem;
-  height: 25rem;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-delay: 2s;
-  animation-name: robo;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    bottom: 12rem;
+    top: -1rem;
+    right: -5rem;
+    height: 25rem;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-name: robo;
 }
 
 @keyframes robo {
-  0% {
-    top: -1rem;
-  }
+    0% {
+        top: -1rem;
+    }
 
-  50% {
-    top: 1rem;
-  }
+    50% {
+        top: 1rem;
+    }
 
-  100% {
-    top: -1rem;
-  }
+    100% {
+        top: -1rem;
+    }
 }
 
 .card-box {
-  position: absolute;
-  top: 8rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-  background-color: var(--banana);
-  color: black;
-  font-weight: 700;
-  font-size: 2.5rem;
-  border-radius: 10px;
-  margin: 1rem;
-  padding: 1rem 3rem;
-  cursor: pointer;
+    background-color: var(--banana);
+    color: black;
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
 }
 
 .card:hover {
-  background-color: rgb(252, 252, 252);
-  transition: 0.3s;
+    background-color: rgb(252, 252, 252);
+    transition: 0.3s;
 }
 
 .link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .card-box a {
-  color: black;
+    color: black;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .choose button {
+        font-size: 1.2rem;
+        padding: 15px 25px; /* Aumentando o tamanho dos botões */
+    }
+
+    .container {
+        margin: 0 5%; /* Diminuindo a margem para celulares */
+    }
+
+    .border-star-wars {
+        max-width: 100%; /* Garantir que o logo do Star Wars caiba bem em telas pequenas */
+    }
+
+    .img-robo {
+        height: 15rem; /* Ajustando o tamanho do robo em telas pequenas */
+        right: -2rem;
+    }
+
+    .profile-image {
+        width: 120px; /* Ajustando as imagens de perfil */
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Ajustando o tamanho do título */
+    }
+
+    .header-image {
+        width: 100%;
+        max-width: 100%; /* Garantir que a imagem do header seja ajustada para telas pequenas */
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .choose button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .img-robo {
+        height: 12rem;
+        right: 0;
+    }
+
+    .header-image {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Ajustando o título */
+    }
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: yellow;
+}
+
+footer a {
+    color: #FFE81F;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
