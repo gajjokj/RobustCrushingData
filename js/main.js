@@ -1,24 +1,11 @@
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const introElement = document.querySelector('.star-wars-intro');
+        const headerElement = document.querySelector('header');
 
-function mouveover() {
-
-    const music = new Audio
-    const url = "./assets/sounds/sabre.mp3"
-
-    music.src = url
-
-    const cards = document.querySelectorAll('.link').forEach(link => {
-        link.addEventListener('mouseover', () => {
-            music.play()
-            music.volume = 0.3
-            console.log('mouseover')
-        })
-
-        link.addEventListener('mouseout', () => {
-            music.pause()
-            music.currentTime = 0
-            console.log('mouseout')
-        })
-    })
-}
-
-mouveover()
+        if (introElement && headerElement) {
+            introElement.style.display = 'none'; // Esconde a introdução após a animação
+            headerElement.style.display = 'block';  // Exibe o conteúdo principal
+        }
+    }, 13000); // Tempo de animação (13 segundos)
+});
